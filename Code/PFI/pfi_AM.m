@@ -70,7 +70,6 @@ while metric > convcrit;
     % Linear algebra step to get the value function associated with P
     tv(:) = ((speye(2*cs) - beta.*trans))\[ r1; r2 ];
     
-    jjj
     
     metric=max(max(abs((tv-v)./tv)));
     v=   tv; % .15*tv+.85*v; %
